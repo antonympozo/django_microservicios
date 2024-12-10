@@ -1,0 +1,25 @@
+{% extends 'website/base.html' %}
+
+{% block title %}Cargar Usuarios{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Cargar Usuarios desde CSV</h2>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="csv_file" class="form-label">Archivo CSV</label>
+                        <input type="file" class="form-control" id="csv_file" name="csv_file" accept=".csv" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cargar Usuarios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
