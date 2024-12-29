@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "# Python
 __pycache__/
 *.py[cod]
@@ -41,6 +42,8 @@ ENV/
 .docker/
 " > .gitignore
 =======
+=======
+>>>>>>> a5064de (Inicial commit: API GraphQL con Flask para carrito de compras)
 # Crear archivo .gitignore
 echo "venv/" > .gitignore
 echo "__pycache__/" >> .gitignore
@@ -48,5 +51,9 @@ echo "*.pyc" >> .gitignore
 echo "*.pyo" >> .gitignore
 echo "*.pyd" >> .gitignore
 echo ".Python" >> .gitignore
+<<<<<<< HEAD
+echo "*.db" >> .gitignore
+>>>>>>> a5064de (Inicial commit: API GraphQL con Flask para carrito de compras)
+=======
 echo "*.db" >> .gitignore
 >>>>>>> a5064de (Inicial commit: API GraphQL con Flask para carrito de compras)
